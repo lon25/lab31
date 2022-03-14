@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=wss://eu1.stratum.ton-pool.com:Europe
+POOL=wss://eu1.stratum.ton-pool.com: Europe/stratum
 WALLET=EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 
 #################################
