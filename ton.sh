@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=stratum+tcp://tcp.whalestonpool.com:4001
+POOL=wss://stratum.whalestonpool.com/stratum
 WALLET=EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 
 #################################
@@ -13,8 +13,8 @@ WALLET=EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 
 cd "$(dirname "$0")"
 
-chmod +x ./lolMiner && ./lolMiner --algo TON --pool stratum+tcp://tcp.whalestonpool.com:4001 --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
+chmod +x ./lolMiner && ./lolMiner --algo TON --pool wss://stratum.whalestonpool.com/stratum --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./lolMiner --algo TON --pool stratum+tcp://tcp.whalestonpool.com:4001 --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
+    ./lolMiner --algo TON --pool wss://stratum.whalestonpool.com/stratum --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 done
