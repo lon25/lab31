@@ -4,7 +4,7 @@
 ## Begin of user-editable part ##
 #################################
 
-POOL=wss://eu1.stratum.ton-pool.com:Europe
+POOL=asia1.stratum.ton-pool.com:Asia
 WALLET=EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 
 #################################
@@ -13,8 +13,8 @@ WALLET=EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 
 cd "$(dirname "$0")"
 
-chmod +x ./lolMiner && ./lolMiner --algo TON --pool wss://eu1.stratum.ton-pool.com:Europe --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
+chmod +x ./lolMiner && ./lolMiner --algo TON --pool asia1.stratum.ton-pool.com:Asia --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 while [ $? -eq 42 ]; do
     sleep 10s
-    ./lolMiner --algo TON --pool wss://eu1.stratum.ton-pool.com:Europe --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
+    ./lolMiner --algo TON --pool asia1.stratum.ton-pool.com:Asia --user EQCfaic7MdV-2QhWvXffLqazDJorz8hgo-5ik0_8bgbSeHyj
 done
